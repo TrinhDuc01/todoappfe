@@ -1,24 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import ListToDo from './component/ListToDo';
+import InputToDo from './component/InputToDo';
+import TContext from './context/TodoContext';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <TContext.TodoContext>
+    <div className="App container">
+      <div className='row'>
+        <InputToDo />
+        <ListToDo />
+      </div>
     </div>
+    </TContext.TodoContext>
   );
 }
 
