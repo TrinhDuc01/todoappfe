@@ -8,8 +8,8 @@ export default function InputToDo() {
 
     return (
         <>
-            <div className='col-4'></div>
-            <div className='col-4'>
+            <div className='col-12 col-md-3'></div>
+            <div className='col-12 col-md-6'>
                 <div className="input-group my-3">
                     <input value={todo} required onChange={(e) => setTodo(e.target.value)} type="text" name='name' className="form-control" placeholder="Nhập ToDo" aria-label="Recipient's username" aria-describedby="basic-addon2" />
                     <button onClick={handleAddTodo} className="input-group-text btn btn-primary" >Thêm</button>
