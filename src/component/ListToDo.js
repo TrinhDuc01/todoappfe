@@ -16,7 +16,7 @@ export default function ListToDo() {
                     </tr>
                 </thead>
                 <tbody>
-                    {listToDo.map((element,i) => (
+                    {listToDo.toReversed().map((element,i) => (
                         <tr key={i}>
                             <th scope="row">{i + 1}</th>
                             <td>{element.name}</td>
